@@ -1,0 +1,15 @@
+[project]
+name = "smart-portrait-crop"
+description = "Reframes landscape video to 9:16 (or any size) with a smoothed virtual camera that follows the action."
+version = "1.0.0"
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/aihangar111/comfyui-smart-portrait-crop"
+
+[tool.comfy]
+PublisherId = "aihangar111"
+DisplayName = "Smart Portrait Crop (9:16)"
