@@ -1,0 +1,73 @@
+{
+  "1": {
+    "class_type": "VHS_LoadVideo",
+    "_meta": { "title": "Load landscape video" },
+    "inputs": {
+      "video": "input.mp4",
+      "force_rate": 0,
+      "custom_width": 0,
+      "custom_height": 0,
+      "frame_load_cap": 0,
+      "skip_first_frames": 0,
+      "select_every_nth": 1,
+      "meta_batch": ["2", 0]
+    }
+  },
+  "2": {
+    "class_type": "VHS_BatchManager",
+    "_meta": { "title": "Meta Batch Manager (keeps RAM low on long clips)" },
+    "inputs": { "frames_per_batch": 120 }
+  },
+  "3": {
+    "class_type": "VHS_VideoInfo",
+    "_meta": { "title": "Video Info" },
+    "inputs": { "video_info": ["1", 3] }
+  },
+  "4": {
+    "class_type": "SmartPortraitCrop",
+    "_meta": { "title": "Smart Portrait Crop (9:16)" },
+    "inputs": {
+      "images": ["1", 0],
+      "out_width": 1080,
+      "out_height": 1920,
+      "fit_mode": "crop_to_fill",
+      "tracking": "manual",
+      "yolo_model": "yolov8n.pt",
+      "target_class": "airplane",
+      "camera_min_x": 0.0,
+      "camera_max_x": 1.0,
+      "detect_conf": 0.25,
+      "face_select": "largest",
+      "smoothing": 0.9,
+      "deadzone": 0.08,
+      "motion_weight": 1.0,
+      "detail_weight": 0.6,
+      "center_bias": 0.25,
+      "hold_from_frame": -1,
+      "hold_x": -1,
+      "x_offset": 0.0,
+      "camera_keyframes": "0:0.58",
+      "ignore_static": 0.8,
+      "scene_cut_sensitivity": 0.35
+    }
+  },
+  "5": {
+    "class_type": "VHS_VideoCombine",
+    "_meta": { "title": "Export 9:16 MP4" },
+    "inputs": {
+      "images": ["4", 0],
+      "audio": ["1", 2],
+      "frame_rate": ["3", 5],
+      "loop_count": 0,
+      "filename_prefix": "portrait_9x16",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 18,
+      "save_metadata": false,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "meta_batch": ["2", 0]
+    }
+  }
+}
