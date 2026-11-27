@@ -41,7 +41,7 @@ Turn any landscape video into a vertical 9:16 video for Instagram Reels, YouTube
 
 It is a single custom node plus a ready-made workflow. It is fast (it analyzes small thumbnails and does the crop on the GPU), it needs no extra models for most modes, and it gives you several ways to decide where the camera looks, from fully automatic to fully manual.
 
-It was built around aerial refueling footage (a fixed camera in a boom operator pod looking at a large receiver aircraft), so it handles big subjects, fixed cameras and static window frames well. It also works on people and faces.
+It was built around an aerial refueling animation created in ComfyUi (a fixed camera in a boom operator pod looking at a large receiver aircraft), so it handles big subjects, fixed cameras and static window frames well. It also works on people and faces.
 
 > **Status:** this is a hobby project, not a polished release. Tracking quality depends on your footage. When auto-tracking misses, `manual` mode with keyframes is the reliable fallback.
 
