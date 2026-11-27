@@ -4,6 +4,8 @@
 
 Turn any video, landscape or portrait, into an intelligently tracked 9:16 or 16:9 crop, with a virtual camera that keeps the action in frame. Automatic tracking, blazing fast, and no AI models needed for most modes.
 
+https://github.com/user-attachments/assets/f87454ba-3b26-425d-bc41-54364fc16590
+
 ## Choose Your Version
 
 Smart Portrait Crop comes in two flavors. Pick the one that fits how you work.
