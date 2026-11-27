@@ -28,7 +28,7 @@ It was built around aerial refueling footage (a fixed camera in a boom operator 
    - **Comfy CLI:** run `comfy node install smart-portrait-crop`.
    - **Manually:** clone this repo into `ComfyUI/custom_nodes/` (`git clone https://github.com/aihangar111/comfyui-smart-portrait-crop`), or copy `smart_portrait_crop.py` alone into `ComfyUI/custom_nodes/`.
 3. **Restart ComfyUI and refresh the browser tab.** The node's Python file is only read at startup, so a new version needs a restart. If a node already on your canvas looks old, delete it and add it again from the search box ("Smart Portrait Crop").
-4. Load `example_workflows/portrait_9x16_workflow.json` (drag it onto the canvas) and choose your video in the loader node.
+4. Load `example_workflows/portrait_9x16_workflow.json` (drag it onto the canvas) and choose your video in the loader node. If your video has no sound, load `example_workflows/portrait_9x16_workflow_no_audio.json` instead.
 
 Optional, for the detector modes only:
 - The `ultralytics` Python package.
@@ -149,6 +149,7 @@ To find a frame number, multiply the time in seconds by the frame rate (frame 30
 - **The camera is twitchy.** Raise `smoothing` or `deadzone`.
 - **The camera reacts too slowly.** Lower `smoothing` or `deadzone`.
 - **New settings don't appear after an update.** Restart ComfyUI, refresh the browser, and re-add the node.
+- **The run fails with "VHS failed to extract audio" (or "audio not found").** The source video has no sound track. This is common after an upscaler or other tool that drops audio. Load Video raises the error itself, so the node can't work around it. Use `example_workflows/portrait_9x16_workflow_no_audio.json`, or unplug the `audio` link between Load Video and Video Combine in the regular workflow. The cropped video will have no sound, which is correct because the source had none.
 - **Long videos run out of memory.** Keep the Meta Batch Manager connected, or lower `frames_per_batch`.
 
 ---
