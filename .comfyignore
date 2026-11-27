@@ -1,0 +1,5 @@
+# Keep the stand-alone download out of the ComfyUI registry package
+SmartPortraitCrop.zip
+
+# Optional: also keep the README banner image out of the package
+thanksgiving-banner.png
