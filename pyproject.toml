@@ -1,7 +1,7 @@
 [project]
 name = "smart-portrait-crop"
 description = "Reframes landscape video to 9:16 (or any size) with a smoothed virtual camera that follows the action."
-version = "1.0.0"
+version = "1.0.1"
 license = { file = "LICENSE" }
 readme = "README.md"
 requires-python = ">=3.9"
