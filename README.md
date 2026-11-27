@@ -28,7 +28,7 @@ It was built around aerial refueling footage (a fixed camera in a boom operator 
    - **Comfy CLI:** run `comfy node install smart-portrait-crop`.
    - **Manually:** clone this repo into `ComfyUI/custom_nodes/` (`git clone https://github.com/aihangar111/comfyui-smart-portrait-crop`), or copy `smart_portrait_crop.py` alone into `ComfyUI/custom_nodes/`.
 3. **Restart ComfyUI and refresh the browser tab.** The node's Python file is only read at startup, so a new version needs a restart. If a node already on your canvas looks old, delete it and add it again from the search box ("Smart Portrait Crop").
-4. Load `portrait_9x16_workflow.json` (drag it onto the canvas) and choose your video in the loader node.
+4. Load `example_workflows/portrait_9x16_workflow.json` (drag it onto the canvas) and choose your video in the loader node.
 
 Optional, for the detector modes only:
 - The `ultralytics` Python package.
@@ -159,6 +159,7 @@ Confirmed working on real footage:
 - 16:9 to 9:16 with `manual` tracking, `crop_to_fill` and `blurred_background`
 - 16:9 output (1920x1080) from landscape source, with `blurred_background`
 - 9:16 to 16:9 with `blurred_background`
+- `yolo_detect` + `airplane` on a small, fast aircraft (A-12) crossing the full width of a landscape frame, from the far right to the far left. The camera kept it well centered in the 9:16 output from start to finish.
 - Aircraft tracking (`aircraft`, `yolo_detect` + `airplane`) on a fixed-camera aerial refueling clip. It followed the approach but could swing away from a large subject at the frame edge, so `manual` was the most dependable there.
 
 Less tested: `face_yolo`, `use_mask`, `hold_from_frame`, and the person class. Reports are welcome.
