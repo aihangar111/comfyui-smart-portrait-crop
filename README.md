@@ -2,7 +2,7 @@
 
 # Smart Portrait Crop
 
-Turn any video, landscape or portrait, into a perfectly tracked 9:16 or 16:9 crop, with a virtual camera that keeps the action in frame. Automatic tracking, blazing fast, and no AI models needed for most modes.
+Turn any video, landscape or portrait, into an intelligently tracked 9:16 or 16:9 crop, with a virtual camera that keeps the action in frame. Automatic tracking, blazing fast, and no AI models needed for most modes.
 
 ## Choose Your Version
 
@@ -55,7 +55,7 @@ It was built around aerial refueling footage (a fixed camera in a boom operator 
 
 1. **ComfyUI-VideoHelperSuite** (VHS) is required for the video load and export nodes. Install it through ComfyUI Manager.
 2. Install the node, using any one of these:
-   - **ComfyUI Manager** (once it appears there): search for "Smart Portrait Crop" and install it.
+   - **ComfyUI Manager**: search for "Smart Portrait Crop" and install it.
    - **Comfy CLI:** run `comfy node install smart-portrait-crop`.
    - **Manually:** clone this repo into `ComfyUI/custom_nodes/` (`git clone https://github.com/aihangar111/comfyui-smart-portrait-crop`), or copy `smart_portrait_crop.py` alone into `ComfyUI/custom_nodes/`.
 3. **Restart ComfyUI and refresh the browser tab.** The node's Python file is only read at startup, so a new version needs a restart. If a node already on your canvas looks old, delete it and add it again from the search box ("Smart Portrait Crop").
