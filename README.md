@@ -255,7 +255,7 @@ Not yet verified: the launcher on a clean Windows machine without Python, and a 
 
 ## Support the Project
 
-Smart Portrait Crop is free and open source. If it saves you time, please consider a donation to help keep it free and make it even better.
+Smart Portrait Crop is free and open source. If it saves you time, please consider a donation to help keep it free and make it even better.  Ai.Hangar is an independent creative technology project founded by a U.S. Air Force service-connected disabled veteran, combining aviation experience with a passion for AI, software development, and open-source tools.
 
 💛 **[Support Ai.Hangar on Ko-fi](https://ko-fi.com/aihangar)**
 
