@@ -263,6 +263,15 @@ Smart Portrait Crop is free and open source. If it saves you time, please consid
 
 *Thank you for being part of this journey!* Build. Share. Improve.
 
+
+A little personal background...
+
+I'm a USAF veteran in my 60s, and over the past year or so I've spent countless hours learning, experimenting, and discovering just how much is possible with ComfyUI.
+Eventually, I wanted to create something of my own that I could give back to this amazing community.
+Honestly, I never imagined I'd end up developing and publishing a tool like Smart Portrait Crop!
+The inspiration and possibilities I've discovered through Comfy.org (AND Reddit) have played a big part in that journey, so I just want to say thank you.
+This project is my little way of giving something back. I hope it's useful to others, and I'm excited to see where it goes!
+
 ## Credits
 
 Built by Ai.Hangar and Claude (Anthropic) and tested on real aerial refueling footage.
